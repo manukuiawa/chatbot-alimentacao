@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AssistenteAI</title>
+
+  <!-- Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="chat">
+
+  
+    <div class="chat-header">
+      <div class="user-info">
+        <img src="/image/logo.png" class="avatar">
+        <div>
+          <h3>Assistente Alimenta Sesi</h3>
+          <span class="status">● Online</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-body" id="chatBody">
+      <div class="message bot">
+        Olá! 👋 Sou o Assistente da Alimenta Sesi. Como posso ajudar você hoje?
+      </div>
+    </div>
+
+    <div class="chat-footer">
+      <input type="text" id="inputMessage" placeholder="Digite sua mensagem...">
+      <button onclick="sendMessage()">➤</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
