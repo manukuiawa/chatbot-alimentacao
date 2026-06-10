@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AssistenteAI</title>
 
-  <!-- Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
@@ -18,10 +17,10 @@
   
     <div class="chat-header">
       <div class="user-info">
-        <img src="/image/logo.png" class="avatar">
+        <img src="{{ url_for('static', filename='image/logo.png') }}">
         <div>
           <h3>Assistente Alimenta Sesi</h3>
-          <span class="status">● Online</span>
+          <span class="status" id="statusBot">● Online</span>
         </div>
       </div>
     </div>
@@ -40,6 +39,6 @@
   </div>
 </div>
 
-<script src="script.js"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
